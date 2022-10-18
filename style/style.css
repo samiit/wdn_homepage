@@ -204,25 +204,25 @@ img{
   }
 
 @media only screen and (max-width: 650px) {
-  .wdn-blue{
-    height:550px;
-  }
   .heading{
      -webkit-animation-name: none !important;
   }
   .application_options{
-        padding:3rem 0.75rem;
+        padding:4rem 0.75rem;
       }
   .cards_together{
         padding:3rem 0.25rem;
       }
   .wdn-blue{
-    height: 600px;
+    height: 630px;
   }
 }
 @media only screen and (max-width: 1000px){
   @keyframes moving_head{
           0% {top:0px;}
           100% {top:180px;}
+        }
+        .wdn-blue{
+          height: 580px;
         }
 }
