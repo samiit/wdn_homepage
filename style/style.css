@@ -211,11 +211,14 @@ img{
      -webkit-animation-name: none !important;
   }
   .application_options{
-        padding:0.5rem;
+        padding:3rem 0.75rem;
       }
   .cards_together{
         padding:3rem 0.25rem;
       }
+  .wdn-blue{
+    height: 600px;
+  }
 }
 @media only screen and (max-width: 1000px){
   @keyframes moving_head{
