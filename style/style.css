@@ -1,0 +1,209 @@
+h2,h4{
+  text-align: center;
+  /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* //Top section */
+/* Navbar section */
+.container-fluid {
+  padding: 7% 15%;
+}
+.nav_hov{
+  padding: 0 18px;
+  background-color:transparent;
+  border-radius: 10%;
+  transition-property: background-color;
+  transition-duration:1s;
+}
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.nav_hov:hover{
+  background-color:#00B4D8;
+}
+/* main display */
+.wdn-blue {
+    padding: 20px;
+    background-image: url('../images/pipes.jpg');
+    height: 550px;
+    background-size: 100% 100%;
+    background-position: center center;
+    animation: shrink infinite 5s alternate;
+    position: relative;
+    color:#ffffff;
+    opacity:0.85;
+}
+.wdn-blue:hover{
+  opacity:0.75;
+}
+/* headings */
+.heading_txt{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.6rem;
+  width:100%;
+  text-shadow: #000000 4px 4px;
+}
+.heading_txt:hover{
+  font-size: 3.8rem;
+  text-shadow: #000000 6px 6px;
+}
+.heading{
+  position:relative;
+  animation-name: moving_head;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+}
+.description{
+  animation-name: moving_txt;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  color:white;
+}
+
+
+/* //gallery containers */
+.application_options{
+      padding:4rem;
+      text-align:center;
+      height:45rem;
+    }
+.cards_together{
+  padding:3rem 0.5rem;
+}
+.cards{
+      font-size: 1rem;
+      height:25rem;
+      width:21rem;
+      border-radius: 5px
+      padding: 4rem;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow:hidden;
+      box-shadow: 2px 2px 15px -4px rgba(0, 0, 0, 0.6);
+      transition: all 0.2s ease-in-out;
+      background-color:  #91eae4;
+      background: linear-gradient(to left,  #90E0EF, #00B4D8);
+      margin:1rem;
+      color: #ffffff;
+    }
+.card_header{
+  width:100%;
+  height: 4rem;
+  background-color:#CAF0F8;
+  color:#00B4D8;
+  text-align: justify;
+  padding:0.5rem;
+}
+.card_1{float:left;}
+.card_2{float:left;}
+.card_3{float:left;}
+.card_1:hover, .card_2:hover, .card_3:hover{
+      box-shadow: 2px 2px 50px -4px rgba(0, 0, 0, 0.6);
+    }
+img{
+  width:100%;
+  height:10rem;
+  padding:1rem 0.5rem;
+}
+.buy-button {
+      cursor: pointer;
+      position: absolute;
+      width: 250px;
+      height: 180px;
+      background:  #CAF0F8;
+      border-radius: 15%;
+      right: -14%;
+      bottom: -27%;
+      transition: all 0.4s ease-in-out;}
+      /* // BUTTON */
+.buy-button > h3 {
+        text-shadow: 0 0 0;
+        text-emphasis: bold;
+        color: #white;
+        position: absolute;
+        left: 8%;
+        top: 10%;
+        color: black;
+        font-size: 1rem;
+        transition: all 0.4s ease-in-out;
+      }
+.buy-button:hover {
+        width: 100%;
+        right: 0%;
+        border-radius: 0%;
+        h3 {
+          left: 90%;
+          transform: translate(-50%, 0%);
+        }
+        .card{
+          color:yellow;
+        }
+      }
+
+/* footer items */
+  .footer-basic {
+    margin-top:10px;
+    float:left;
+    padding:12px;
+    background-color:#00B4D8;
+    color:#ffffff;
+    display: inline;
+    width:100%;
+  }
+  .footer-basic ul {
+    padding:0;
+    text-align:center;
+    font-size:17px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  .footer-basic li {
+    padding:0 10px;
+  }
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#ffffff;
+    margin-bottom:0;
+  }
+
+/* animations */
+@keyframes moving_head{
+    0% {top:0px;}
+    100% {top:180px;}
+  }
+@keyframes moving_txt{
+    0%{color:transparent;}
+    100%{color:white;}
+  }
+@keyframes shrink {
+    0% {
+      background-size: 120% 120%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+  .wdn-blue{
+    height:550px;
+  }
+  .heading{
+     -webkit-animation-name: none !important;
+  }
+}
