@@ -7,114 +7,128 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Water Network Analysis</title>
   <link rel="stylesheet" href="style/style.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/ic_launcher.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid wdn-blue">
-  <nav class="navbar navbar-expand-lg navbar-dark ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav navbar-nav ml-auto">
-      <li class="nav-item active nav_hov">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item active nav_hov ">
-        <a class="nav-link" href="login.html">Login</a>
-      </li>
-      <li class="nav-item active nav_hov ">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-  <div class="container">
+  <div class="header wdn-blue">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="logo">
+          <img src="images/ic_launcher.png">
+        </div>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active nav_hov">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active nav_hov ">
+            <a class="nav-link" href="login.html">WebApp</a>
+          </li>
+          <li class="nav-item active nav_hov ">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active nav_hov ">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item active nav_hov ">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
       <div class="heading">
-        <h2 class="heading_txt">Water distribution Networks </h2>
-        </div>
-        <div class="description">
-            <h4 class="descript_txt">A gallery of water distribution network applications! </h4>
-        </div>
-  </div>
+        <h1 >Welcome aboard! </h1>
+      </div>
+      <div class="description">
+        <h3>Develop Water Networks </h3>
+        <h4>Cutting-edge of Maths and Science at Scale</h4>
+      </div>
+    </div>
+    <div class="ex_button">
+        <a href="#explore" class="btn">Explore</a>
+    </div>
   </div>
 
   <!-- Middle section -->
-  <div class="application_options">
+  <div class="application_options" id="explore">
     <h2>Water Distribution Networks Application</h2>
-      <div class="cards_together">
-        <div class="card_1 cards">
-          <div class="card_header">
-             <h4 >Water Network Designer</h4>
-           </div>
-            <div class="card_img">
-            <img src="images/designer_image.jpg" alt="">
-            </div>
-            <div class="card_descrip">
-              <p>Design a water network (pipe dimensions) with loops and branched structure from reservoir to junctions requiring delivery!</p>
-            </div>
-            <div class="buy-button">
-              <h3 class="btn">Simulate</h3>
-            </div>
+    <div class="cards_together">
+      <div class="card_1 cards">
+        <div class="card_header">
+          <h4>Water Network Designer</h4>
         </div>
-        <div class="card_2 cards">
-            <div class="card_header colored-section">
-             <h4 >Sensor Placement</h4>
-           </div>
-            <div class="card_img">
-            <img src="images/scheduler_image.jpg" alt="sheduler">
-            </div>
-            <div class="card_descrip">
-              <p>Place just the right number of flow sensors in a given piping network ensuring complete flow observability.</p>
-            </div>
-            <div class="buy-button">
-              <h3 class="btn">Simulate</h3>
-            </div>
+        <div class="card_img">
+          <img src="images/designer_image.jpg" alt="">
         </div>
-        <div class="card_3 cards">
-            <div class="card_header colored-section">
-             <h4 >Sensor Placement</h4>
-           </div>
-            <div class="card_img">
-            <img src="images/sensor_place_image.jpg" alt="">
-            </div>
-            <div class="card_descrip">
-              <p>Design a water network (pipe dimensions) with loops and branched structure from reservoir to junctions requiring delivery!</p>
-            </div>
-            <div class="buy-button">
-              <h3 class="btn">Simulate</h3>
-            </div>
+        <div class="card_descrip">
+          <p>Design a water network (pipe dimensions) with loops and branched structure from reservoir to junctions requiring delivery!</p>
         </div>
+        <div class="buy-button">
+          <h3 class="btn"><a target="blank" href="https://ascelibrary.org/doi/10.1061/%28ASCE%290733-9372%281997%29123%3A4%28381%29">Simulate</a></h3>
         </div>
+      </div>
+      <div class="card_2 cards">
+        <div class="card_header colored-section">
+          <h4>Sensor Placement</h4>
+        </div>
+        <div class="card_img">
+          <img src="images/scheduler_image.jpg" alt="sheduler">
+        </div>
+        <div class="card_descrip">
+          <p>Place just the right number of flow sensors in a given piping network ensuring complete flow observability.</p>
+        </div>
+        <div class="buy-button">
+          <h3 class="btn"><a target="blank" targer="blank"href="https://ascelibrary.org/doi/10.1061/%28ASCE%290733-9372%281997%29123%3A4%28381%29">Simulate</a></h3>
+        </div>
+      </div>
+      <div class="card_3 cards">
+        <div class="card_header colored-section">
+          <h4>Sensor Placement</h4>
+        </div>
+        <div class="card_img">
+          <img src="images/sensor_place_image.jpg" alt="">
+        </div>
+        <div class="card_descrip">
+          <p>Design a water network (pipe dimensions) with loops and branched structure from reservoir to junctions requiring delivery!</p>
+        </div>
+        <div class="buy-button">
+          <h3 class="btn"><a target="blank" href="https://www.sciencedirect.com/science/article/abs/pii/B9780444634559500763">Simulate</a></h3>
+        </div>
+      </div>
+    </div>
   </div>
-
-
 
   <!-- Change the footer links to the actual pages later. -->
 
-<div class="footer-basic">
-  <footer>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="/">Home</a></li>
-      <li class="list-inline-item"><a href="#wdn-blue">About</a></li>
-      <li class="list-inline-item"><a href="{{url_for('index')}}">Terms</a></li>
-      <li class="list-inline-item"><a href="{{url_for('index')}}">Privacy Policy</a></li>
-    </ul>
-    <p class="copyright">© Copyright 2022 IITM Pravartak Technologies Foundation. All Rights Reserved.</p>
-  </footer>
-</div>
+  <div class="footer-basic">
+    <footer>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/">Home</a></li>
+        <li class="list-inline-item"><a href="#wdn-blue">About</a></li>
+        <li class="list-inline-item"><a href="{{url_for('index')}}">Terms</a></li>
+        <li class="list-inline-item"><a href="{{url_for('index')}}">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">© Copyright 2022 IITM Pravartak Technologies Foundation. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <script src="imageTransition.js">
+  </script>
 </body>
 
 </html>
