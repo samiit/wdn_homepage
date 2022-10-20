@@ -100,11 +100,9 @@ h1,h2,h3,h4{
   color: white;
    text-decoration: none;
 }
-.ex_button a:hover{
-  color:black;
-}
 .ex_button:hover{
     background-color: white;
+    color:black;
 }
 /* //gallery containers */
 .application_options {
@@ -180,16 +178,16 @@ img {
 }
 
 /* // BUTTON */
-.btn a{
+.btn_link{
   text-shadow: 0 0 0;
   text-emphasis: bold;
   color:#00B4D8;
-  position: absolute;
+  /* position: absolute;
   left: 8%;
-  top: 10%;
+  top: 10%; */
   font-size: 1.2rem;
   transition: all 0.4s ease-in-out;
-  padding-top:5px;
+  padding-top:10px;
 }
 
 .buy-button:hover {
