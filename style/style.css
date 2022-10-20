@@ -78,7 +78,7 @@ h1,h2,h3,h4{
     padding: 10px;
     font-size: 20px;
     animation-name: moving_txt;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 
 /* //Explore button */
@@ -94,7 +94,7 @@ h1,h2,h3,h4{
    font-size:larger;
    visibility: visible;
    animation-name: button_visible ;
-   animation-duration: 6s;
+   animation-duration: 5s;
 }
 .ex_button a{
   color: white;
